@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* About.css */
+
+.about-container {
+  max-width: 1280px; /* Equivalent to max-w-screen-2xl */
+  margin: 0 auto;
+  padding: 2rem 5rem; /* Equivalent to md:px-20 */
+  margin-top: 5rem; /* Equivalent to my-20 */
+  margin-bottom: 5rem;
+  background-image: url('./public/a.jpg'); /* Replace with the correct path to your image */
+  background-size: cover; /* Adjust as necessary (options: 'cover', 'contain', etc.) */
+  background-position: center; /* Adjust as necessary (options: 'center', 'top', 'bottom', etc.) */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+}
+
+.about-heading {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: bold;
+  margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+}
+
+.about-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.about-section-title {
+  color: #38a169; /* Equivalent to text-green-600 */
+  font-weight: 600;
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  margin-bottom: 1rem;
+}
+
+.about-list-item {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
