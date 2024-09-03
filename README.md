@@ -1,4 +1,4 @@
-Under Construction but can visit
+Under Construction 
 
 👉 [visit website](https://clickmyportfolio.netlify.app)
 
