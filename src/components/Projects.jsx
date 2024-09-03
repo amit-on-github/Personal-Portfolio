@@ -6,6 +6,8 @@ import html from "../../public/html.png";
 import react from "../../public/react.png";
 import javascript from "../../public/javascript.png";
 import css from "../../public/css.jpg";
+import backgroundImage from "../../public/z.jpg"; // Add this line for your background image
+
 function Projects() {
   const cardItem = [
     {
@@ -44,15 +46,15 @@ function Projects() {
       name: "Java",
     },
   ];
+  
   return (
     <div
       name="Projects"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 bg-cover bg-center"
+      style={{ backgroundImage: `url(${backgroundImage})` }} // Add this line for background image
     >
       <div>
-        <h1 className="text-3xl font-bold mb-5">Projects
-        </h1>
-       
+        <h1 className="text-3xl font-bold mb-5">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
           {cardItem.map(({ id, logo, name }) => (
             <div
@@ -70,7 +72,7 @@ function Projects() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
-              <div className=" px-6 py-4 space-x-3 justify-around">
+              <div className="px-6 py-4 space-x-3 justify-around">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
                   Video
                 </button>

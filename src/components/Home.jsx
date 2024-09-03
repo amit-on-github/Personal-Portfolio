@@ -14,7 +14,7 @@ function Home() {
         name="Home"
         className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-28"
         style={{
-          backgroundImage: "url('./public/b.jpg')", // Add the background image here
+          backgroundImage: "url('./public/z.jpg')", // Add the background image here
           backgroundSize: "cover", // This will cover the entire area
           backgroundPosition: "center", // Center the image
         }}

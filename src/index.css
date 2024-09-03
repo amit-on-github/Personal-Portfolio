@@ -12,10 +12,10 @@ body {
 .about-container {
   max-width: 1280px; /* Equivalent to max-w-screen-2xl */
   margin: 0 auto;
-  padding: 2rem 5rem; /* Equivalent to md:px-20 */
+  padding: 5rem 5rem; /* Equivalent to md:px-20 */
   margin-top: 5rem; /* Equivalent to my-20 */
   margin-bottom: 5rem;
-  background-image: url('./public/a.jpg'); /* Replace with the correct path to your image */
+  background-image: url('./public/y.jpg'); /* Replace with the correct path to your image */
   background-size: cover; /* Adjust as necessary (options: 'cover', 'contain', etc.) */
   background-position: center; /* Adjust as necessary (options: 'center', 'top', 'bottom', etc.) */
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */
