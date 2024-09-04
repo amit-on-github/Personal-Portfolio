@@ -6,83 +6,80 @@ import html from "../../public/html.png";
 import react from "../../public/react.png";
 import javascript from "../../public/javascript.png";
 import css from "../../public/css.jpg";
-import backgroundImage from "../../public/z.jpg"; // Add this line for your background image
 
 function Projects() {
   const cardItem = [
     {
-      id: 3,
+      id: 1,
       logo: html,
-      name: "html",
+      name: "HTML",
     },
     {
-      id: 3,
+      id: 2,
       logo: css,
-      name: "css",
+      name: "CSS",
     },
     {
       id: 3,
       logo: javascript,
-      name: "javascript",
+      name: "JavaScript",
     },
     {
-      id: 3,
+      id: 4,
       logo: tailwind,
-      name: "tailwind",
+      name: "Tailwind CSS",
     },
     {
-      id: 3,
+      id: 5,
       logo: react,
       name: "React",
     },
     {
-      id: 5,
+      id: 6,
       logo: python,
       name: "Python",
     },
     {
-      id: 6,
+      id: 7,
       logo: java,
       name: "Java",
     },
   ];
-  
+
   return (
     <div
       name="Projects"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10 bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }} // Add this line for background image
+      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
     >
-      <div>
-        <h1 className="text-3xl font-bold mb-5">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
-          {cardItem.map(({ id, logo, name }) => (
-            <div
-              className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
-              key={id}
-            >
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-10 text-gray-800">Projects</h1>
+        <p className="text-lg text-gray-600 mb-10">
+          Explore the technologies I've worked with.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {cardItem.map(({ id, logo, name }) => (
+          <div
+            className="border-[2px] rounded-lg shadow-lg p-5 cursor-pointer hover:shadow-2xl hover:scale-105 duration-300 transform transition"
+            key={id}
+          >
+            <div className="flex justify-center">
               <img
                 src={logo}
-                className="w-[120px] h-[120px] p-1 rounded-full border-[2px]"
-                alt=""
+                className="w-[100px] h-[100px] p-2 rounded-full border-[2px]"
+                alt={name}
               />
-              <div>
-                <div className="px-2 font-bold text-xl mb-2">{name}</div>
-                <p className="px-2 text-gray-700">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div className="px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
-                </button>
-              </div>
             </div>
-          ))}
-        </div>
+            <div className="text-center mt-5">
+              <h2 className="text-2xl font-semibold mb-3 text-gray-800">
+                {name}
+              </h2>
+              <p className="text-gray-600">
+                I've worked extensively with {name} to create efficient and scalable projects.
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
