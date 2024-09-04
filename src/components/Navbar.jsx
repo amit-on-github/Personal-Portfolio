@@ -3,6 +3,8 @@ import pic from "../../public/Amit photo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
+import { AiOutlineDownload } from "react-icons/ai";
+
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const navItems = [
@@ -23,6 +25,7 @@ function Navbar() {
       text: "Contact",
     },
   ];
+
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
@@ -35,7 +38,7 @@ function Navbar() {
             </h1>
           </div>
           {/* desktop navbar */}
-          <div>
+          <div className="flex items-center space-x-8">
             <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
                 <li
@@ -54,6 +57,14 @@ function Navbar() {
                 </li>
               ))}
             </ul>
+            <a
+              href="/a.pdf" // Replace with the actual path to your CV file
+              download
+              className="hidden md:block px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 duration-200"
+            >
+              <AiOutlineDownload className="inline-block mr-1" />
+              Download CV
+            </a>
             <div onClick={() => setMenu(!menu)} className="md:hidden">
               {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
             </div>
@@ -80,6 +91,16 @@ function Navbar() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/path-to-your-cv-file.pdf" // Replace with the actual path to your CV file
+                  download
+                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 duration-200"
+                >
+                  <AiOutlineDownload className="inline-block mr-1" />
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         )}
