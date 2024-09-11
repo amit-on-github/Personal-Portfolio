@@ -43,7 +43,7 @@ function Navbar() {
                 ))}
               </ul>
               <a
-                href="/a.pdf" // Replace with the actual path to your CV file
+                href="/R.pdf" // Replace with the actual path to your CV file
                 download
                 className="hidden md:block px-4 py-2 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition-colors duration=300"
               >
